@@ -1,0 +1,30 @@
+.bgimg_main_wrapper {
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.bgimg_location_link {
+    display: inline-block;
+    position: relative;
+    top: 86%;
+    left: 8%;
+    /* background-color: rgba(249, 249, 249, 1);
+    box-shadow: 0 0 100px #333333; */
+    /* border-radius: 4px; */
+    /* padding: 4px 5px; */
+}
+
+.bgimg_location_link a {
+    text-decoration: none;
+    font-size: .9rem;
+    color: #333333;
+    background-color: rgba(250, 250, 250, .9);
+    padding: 4px;
+    /* box-shadow: 0 0 100px rgb(130, 130, 130); */
+}
+
+.bgimg_location_link a:hover {
+    font-weight: 500;
+}
