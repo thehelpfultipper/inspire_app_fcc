@@ -33,8 +33,18 @@ function App() {
   };
 
   const fetchImages = async () => {
+    let searchTerms = [
+      'europe+asia', 
+      'travel',
+      'eastern+asia', 
+      'europe', 
+      'tropical+sunset'
+    ];
+
+    let q = searchTerms[Math.floor(Math.random() * searchTerms.length)];
+
     let res = await fetch(
-      "https://api.unsplash.com/search/photos?orientation=landscape&query=europe+asia",
+      `https://api.unsplash.com/search/photos?orientation=landscape&query=${q}&sig=${Math.floor(Math.random())}`,
       {
         headers: {
           Authorization: `Client-ID ${process.env.REACT_APP_UNSPLASH_KEY}`,
