@@ -34,11 +34,11 @@ function App() {
 
   const fetchImages = async () => {
     let searchTerms = [
-      'europe+asia', 
-      'travel',
-      'eastern+asia', 
-      'europe', 
-      'tropical+sunset'
+      'pastel', 
+      'eastern asia', 
+      'wallpaper', 
+      'tropical sunset',
+      'tropical'
     ];
 
     let q = searchTerms[Math.floor(Math.random() * searchTerms.length)];
