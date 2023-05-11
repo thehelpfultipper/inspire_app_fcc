@@ -9,7 +9,7 @@ const Card = (props) => {
         <div className={styles.card_wrapper}>
             <CardHead />
             <CardBody quote={props.quote} />
-            <CardFoot />
+            <CardFoot next={props.nxtBtn} />
         </div>
     )
 }

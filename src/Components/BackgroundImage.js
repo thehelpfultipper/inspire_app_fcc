@@ -31,12 +31,20 @@ const BackgroundImage = (props) => {
     place = `${city}, ${country}`;
   }
 
+  const nextReqHandler = () => {
+    let newRandomImg = getRdmItem(props.images), 
+        newRandomQuote = getRdmItem(props.quotes);
+
+    setRandomImg(newRandomImg);
+    setRandomQuote(newRandomQuote);
+  }
+
   return (
     <div
       className={styles.bgimg_main_wrapper}
       style={{ backgroundImage: `url(${randomImg.url})` }}
     >
-      <Card quote={randomQuote} />
+      <Card quote={randomQuote} nxtBtn={nextReqHandler} />
       <div className={styles.bgimg_location_link}>
         <a href={randomImg.link} target="_blank" rel="noopener">
           {place}
