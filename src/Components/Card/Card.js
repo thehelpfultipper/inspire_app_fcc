@@ -4,11 +4,11 @@ import CardFoot from "./CardFoot";
 
 import styles from "./Card.module.css";
 
-const Card = () => {
+const Card = (props) => {
     return (
         <div className={styles.card_wrapper}>
             <CardHead />
-            <CardBody />
+            <CardBody quote={props.quote} />
             <CardFoot />
         </div>
     )

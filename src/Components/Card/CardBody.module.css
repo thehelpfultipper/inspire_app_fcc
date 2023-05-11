@@ -1,0 +1,33 @@
+.cardbody_wrapper {
+    text-align: center;
+    padding: 0 15px;
+    flex: 2;
+}
+
+.cardbody_text {
+    /* font-size: 2.2vw; */
+    line-height: 1.5em;
+}
+
+.lg_text {
+    font-size: 2.2em;
+}
+
+.md_text {
+    font-size: 1.5em;
+}
+
+.sm_text {
+    font-size: 1.5em;
+}
+
+.cardbody_separator {
+    width: 50px;
+    height: 3px;
+    background: black;
+    margin: 0 auto;
+}
+
+.cardbody_author {
+    text-transform: uppercase;
+}

@@ -1,0 +1,43 @@
+.cardfoot_wrapper {
+    padding-bottom: 20px;
+    /* position: relative; */
+    /* top: 10%; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardfoot_socials {
+    margin-left: 20px;
+    align-self: flex-end;
+}
+
+.cardfoot_socials * {
+    width: 30px;
+    margin: 2px;
+    transition: all .3s ease;
+}
+
+.cardfoot_socials *:hover {
+    transform: scale(.9);
+}
+
+.cardfoot_nxtbtn {
+    margin-right: 50px;
+}
+
+.cardfoot_nxtbtn button {
+    border-radius: 50px;
+    border: 3px solid #333333;
+    padding: 2px 4px;
+    background: none;
+}
+
+.cardfoot_nxtbtn button img {
+    width: 45px;
+    transition: all .3s ease;
+}
+
+.cardfoot_nxtbtn button img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}

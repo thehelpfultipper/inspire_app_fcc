@@ -7,7 +7,7 @@
 
 .bgimg_location_link {
     display: inline-block;
-    position: relative;
+    position: absolute;
     top: 86%;
     left: 8%;
     /* background-color: rgba(249, 249, 249, 1);
