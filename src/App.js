@@ -38,7 +38,9 @@ function App() {
       'eastern asia', 
       'wallpaper', 
       'tropical sunset',
-      'tropical'
+      'tropical', 
+      'inspire',
+      'boho'
     ];
 
     let q = searchTerms[Math.floor(Math.random() * searchTerms.length)];
