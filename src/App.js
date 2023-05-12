@@ -39,8 +39,7 @@ function App() {
       'wallpaper', 
       'tropical sunset',
       'tropical', 
-      'inspire',
-      'boho'
+      'light pink'
     ];
 
     let q = searchTerms[Math.floor(Math.random() * searchTerms.length)];
