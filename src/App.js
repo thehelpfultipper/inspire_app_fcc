@@ -36,7 +36,7 @@ function App() {
     let searchTerms = [
       'pastel', 
       'eastern asia', 
-      'wallpaper', 
+      'nature background', 
       'tropical sunset',
       'tropical', 
       'light pink'
