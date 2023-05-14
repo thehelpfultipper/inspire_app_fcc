@@ -39,13 +39,15 @@ const BackgroundImage = (props) => {
     setRandomImg(newRandomImg);
     setRandomQuote(newRandomQuote);
   };
-console.log(randomQuote)
+
   return (
     <div
       className={styles.bgimg_main_wrapper}
       style={{ backgroundImage: `url(${randomImg.url})` }}
     >
-      <NextContext.Provider value={{ quote: randomQuote, nxtBtn: nextReqHandler }}>
+      <NextContext.Provider
+        value={{ quote: randomQuote, nxtBtn: nextReqHandler }}
+      >
         <Card />
       </NextContext.Provider>
       <div className={styles.bgimg_location_link}>

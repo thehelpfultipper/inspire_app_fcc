@@ -1,6 +1,8 @@
 .bgimg_main_wrapper {
     height: 100vh;
     background-size: cover;
+    background-position: center;
+    background: radial-gradient(closest-side, #3f87a6, #f6f6f6, #b47faf);
     position: relative;
     box-sizing: border-box;
 }
@@ -20,8 +22,8 @@
     text-decoration: none;
     font-size: .9rem;
     color: #333333;
-    background-color: rgba(250, 250, 250, .9);
-    padding: 4px;
+    background-color: rgba(250, 250, 250, .98);
+    padding: 4px 5px;
     /* box-shadow: 0 0 100px rgb(130, 130, 130); */
 }
 
