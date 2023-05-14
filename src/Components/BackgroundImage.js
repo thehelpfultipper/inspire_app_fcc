@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Card from "./Card/Card";
+import NextContext from "../context/next-context";
 
 import styles from "./BackgroundImage.module.css";
 
@@ -32,19 +33,21 @@ const BackgroundImage = (props) => {
   }
 
   const nextReqHandler = () => {
-    let newRandomImg = getRdmItem(props.images), 
-        newRandomQuote = getRdmItem(props.quotes);
+    let newRandomImg = getRdmItem(props.images),
+      newRandomQuote = getRdmItem(props.quotes);
 
     setRandomImg(newRandomImg);
     setRandomQuote(newRandomQuote);
-  }
-
+  };
+console.log(randomQuote)
   return (
     <div
       className={styles.bgimg_main_wrapper}
       style={{ backgroundImage: `url(${randomImg.url})` }}
     >
-      <Card quote={randomQuote} nxtBtn={nextReqHandler} />
+      <NextContext.Provider value={{ quote: randomQuote, nxtBtn: nextReqHandler }}>
+        <Card />
+      </NextContext.Provider>
       <div className={styles.bgimg_location_link}>
         <a href={randomImg.link} target="_blank" rel="noopener">
           {place}

@@ -4,14 +4,14 @@ import CardFoot from "./CardFoot";
 
 import styles from "./Card.module.css";
 
-const Card = (props) => {
-    return (
-        <div className={styles.card_wrapper}>
-            <CardHead />
-            <CardBody quote={props.quote} />
-            <CardFoot next={props.nxtBtn} />
-        </div>
-    )
-}
+const Card = () => {
+  return (
+    <div className={styles.card_wrapper}>
+      <CardHead />
+      <CardBody />
+      <CardFoot />
+    </div>
+  );
+};
 
 export default Card;

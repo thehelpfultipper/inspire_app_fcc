@@ -1,8 +1,17 @@
+import { useContext } from "react";
+import NextContext from "../../context/next-context";
+
 import styles from "./CardBody.module.css";
 
-const CardBody = (props) => {
-  let { text, author } = props.quote,
+const CardBody = () => {
+  let ctx = useContext(NextContext);
+
+  let { text, author } = ctx.quote,
     textSize;
+
+  !text &&
+    (text = "Don't let others tell you silence is golden." && (author = "THT"));
+  !author && (author = "Anonymous");
 
   if (text.length > 175) {
     textSize = "1.3em";
@@ -11,7 +20,6 @@ const CardBody = (props) => {
   } else {
     textSize = "1.5em";
   }
-
   return (
     <div className={styles.cardbody_wrapper}>
       <p className={styles.cardbody_text} style={{ fontSize: textSize }}>
