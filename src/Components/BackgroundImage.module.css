@@ -1,8 +1,8 @@
 .bgimg_main_wrapper {
     height: 100vh;
+    background: radial-gradient(closest-side, #3f87a6, #f6f6f6, #b47faf);
     background-size: cover;
     background-position: center;
-    background: radial-gradient(closest-side, #3f87a6, #f6f6f6, #b47faf);
     position: relative;
     box-sizing: border-box;
 }
