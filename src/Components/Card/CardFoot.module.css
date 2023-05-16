@@ -1,7 +1,5 @@
 .cardfoot_wrapper {
     padding-bottom: 20px;
-    /* position: relative; */
-    /* top: 10%; */
     display: flex;
     justify-content: space-between;
 }
@@ -45,4 +43,21 @@
 
 .cardfoot_nxtbtn button:hover {
     border: 1px solid #333333;
+}
+
+@media (max-width: 340px) {
+   .cardfoot_wrapper {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .cardfoot_nxtbtn {
+    margin: 20px 0 40px 0;
+   }
+
+   .cardfoot_socials {
+    margin: 0;
+    align-self: center;
+   }
 }

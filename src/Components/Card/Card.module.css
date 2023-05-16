@@ -1,7 +1,8 @@
 .card_wrapper {
     background: white;
     box-shadow: 0 0 8px  lightgray;
-    width: 580px;
+    max-width: 580px;
+    width: 95%;
     height: 400px;
     margin: 0 auto;
     position: relative;
@@ -9,5 +10,8 @@
     border-radius: 4px;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
 }
+
+
 
