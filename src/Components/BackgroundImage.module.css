@@ -12,10 +12,6 @@
     position: absolute;
     top: 86%;
     left: 8%;
-    /* background-color: rgba(249, 249, 249, 1);
-    box-shadow: 0 0 100px #333333; */
-    /* border-radius: 4px; */
-    /* padding: 4px 5px; */
 }
 
 .bgimg_location_link a {
@@ -28,5 +24,5 @@
 }
 
 .bgimg_location_link a:hover {
-    font-weight: 500;
+    text-shadow: 0.4px 0 0 black;
 }

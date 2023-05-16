@@ -1,5 +1,6 @@
 .card_wrapper {
     background: white;
+    box-shadow: 0 0 8px  lightgray;
     width: 580px;
     height: 400px;
     margin: 0 auto;
