@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Card from "./Card/Card";
 import NextContext from "../context/next-context";
+import LoadAnimation from "./LoadAnimation";
 
 import styles from "./BackgroundImage.module.css";
 
@@ -16,7 +17,7 @@ const BackgroundImage = (props) => {
     randomImg = getRdmItem(props.images);
     randomQuote = getRdmItem(props.quotes);
   } else {
-    return <h2>Loading...</h2>;
+    return <LoadAnimation></LoadAnimation>;
   }
 
   let {
