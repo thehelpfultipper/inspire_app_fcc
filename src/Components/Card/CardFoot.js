@@ -8,14 +8,17 @@ const CardFoot = () => {
   return (
     <div className={styles.cardfoot_wrapper}>
       <div className={styles.cardfoot_socials}>
-        <a href="#">
-          <img src="/icons8-facebook-50.png"></img>
+        <a href="https://thehelpfultipper.com/" target="_blank" rel="noopener">
+          <img src="/tht-logo-nobg-90.png"></img>
         </a>
-        <a href="#">
-          <img src="/icons8-instagram-50.png"></img>
+        <a href="https://www.instagram.com/dm.tht/?hl=en" target="_blank" rel="noopener">
+          <img src="/icons8-instagram-90.png"></img>
         </a>
-        <a href="#">
-          <img src="/icons8-twitter-squared-50.png"></img>
+        <a href="https://pinterest.com/thehelpfultipper/_created/" target="_blank" rel="noopener">
+          <img src="/icons8-pinterest-96.png"></img>
+        </a>
+        <a href="www.linkedin.com/in/kmerkuri97" target="_blank" rel="noopener">
+          <img src="/icons8-linkedin-96.png"></img>
         </a>
       </div>
       <div className={styles.cardfoot_nxtbtn}>
