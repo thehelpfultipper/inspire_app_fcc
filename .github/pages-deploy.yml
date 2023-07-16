@@ -1,0 +1,18 @@
+name: Generate Environment Variables
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-env:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate Environment File
+        env:
+          REACT_APP_UNSPLASH_KEY: ${{ secrets.REACT_APP_UNSPLASH_KEY }}
+
+      - name: Show Environment Variables
+        run: echo "$REACT_APP_UNSPLASH_KEY"
