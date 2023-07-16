@@ -18,6 +18,11 @@ jobs:
           env:
             REACT_APP_UNSPLASH_KEY: ${{ secrets.REACT_APP_UNSPLASH_KEY }}
 
+        - name: Configure Git author
+          run: |
+              git config user.name "${{ env.GIT_USER }}"
+              git config user.email "${{ env.GIT_EMAIL }}"
+
         - name: Deploy
           uses: JamesIves/github-pages-deploy-action@releases/v3
           with:
