@@ -52,7 +52,7 @@ const BackgroundImage = (props) => {
         <Card />
       </NextContext.Provider>
       <div className={styles.bgimg_location_link}>
-        <a href={randomImg.link} target="_blank" rel="noopener">
+        <a href={randomImg.link} target="_blank" rel="noreferrer">
           {place}
         </a>
       </div>
