@@ -6,6 +6,8 @@ import './App.css';
 const IMAGES = [],
       QUOTES = [];
 
+let { REACT_APP_UNSPLASH_KEY } = process.env;
+
 function App() {
   const [images, setImages] = useState(IMAGES);
   const [quotes, setQuotes] = useState(QUOTES);
@@ -13,7 +15,7 @@ function App() {
   const fetchImgDetails = async (id) => {
     let res = await fetch(`https://api.unsplash.com/photos/${id}`, {
       headers: {
-        Authorization: `Client-ID ${process.env.REACT_APP_UNSPLASH_KEY}`,
+        Authorization: `Client-ID ${REACT_APP_UNSPLASH_KEY}`,
       },
     });
 
@@ -48,7 +50,7 @@ function App() {
       `https://api.unsplash.com/search/photos?orientation=landscape&query=${q}&sig=${Math.floor(Math.random())}`,
       {
         headers: {
-          Authorization: `Client-ID ${process.env.REACT_APP_UNSPLASH_KEY}`,
+          Authorization: `Client-ID ${REACT_APP_UNSPLASH_KEY}`,
         },
       }
     );
