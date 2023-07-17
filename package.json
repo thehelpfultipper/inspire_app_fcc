@@ -16,7 +16,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false INLINE_RUNTIME_CHUNK=false CI=false rm -rf ./.env && react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false INLINE_RUNTIME_CHUNK=false CI=false && rm -rf ./.env && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
