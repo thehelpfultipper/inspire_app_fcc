@@ -1,16 +1,33 @@
-name: Generate Environment Variables
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
-  generate-env:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate Environment File
-        env:
-          REACT_APP_UNSPLASH_KEY: ${{ secrets.REACT_APP_UNSPLASH_KEY }}
-        run: echo "$REACT_APP_UNSPLASH_KEY"
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build
+        run: |
+          REACT_APP_UNSPLASH_KEY=${{ secrets.REACT_APP_UNSPLASH_KEY }} npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          folder: build
