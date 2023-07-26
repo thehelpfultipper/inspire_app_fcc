@@ -6,7 +6,7 @@ This React app was built from scratch as part of the FreeCodeCamp challenge. It'
 Check out the live demo of the app hosted on GitHub Pages: [Inspirational Quote Machine Demo](https://thehelpfultipper.github.io/inspire_app_fcc/)
 
 ## Tutorial
-Read how to build and deploy this React app on our tutorial blog post: *coming soon...*
+Read how to build and deploy this React app on our tutorial blog post: [How To Build A Really Stunning Quote App With React](https://thehelpfultipper.com/build-random-quote-machine-app-react/)
 
 ## Objective
 Click the "Next" button to receive a new random inspirational quote and a fresh background image.
