@@ -13,7 +13,7 @@ const CardBody = () => {
     (text = "Don't let others tell you silence is golden." && (author = "THT"));
   // correct for strange new api value ", type.fit" on author
   author.includes(',') && (author = author.split(',')[0]);
-  !author && (author = "Anonymous");
+  (author.toLowerCase().includes('type.fit') || !author) && (author = "Anonymous");
 
   if (text.length > 175) {
     textSize = "1.3em";
