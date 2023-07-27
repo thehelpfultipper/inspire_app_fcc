@@ -112,3 +112,11 @@
         transform: translate(0px, calc(90vh - 0.5*90vh));
     }
 }
+
+@media(max-width:510px) {
+    .preloader {
+        left: 50%;
+        transform: translateX(-60%);
+    }
+}
+
