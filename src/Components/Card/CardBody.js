@@ -11,6 +11,8 @@ const CardBody = () => {
 
   !text &&
     (text = "Don't let others tell you silence is golden." && (author = "THT"));
+  // correct for strange new api value ", type.fit" on author
+  author.includes(',') && (author = author.split(',')[0]);
   !author && (author = "Anonymous");
 
   if (text.length > 175) {
